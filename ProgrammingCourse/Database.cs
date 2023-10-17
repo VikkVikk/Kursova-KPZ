@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 
 namespace ProgrammingCourse
 {
-    class Database
+    public class Database
     {
         private SqlConnection sqlConnection = new SqlConnection(@"Data Source=DESKTOP-UH3DL2B\SQLEXPRESS;Initial Catalog=OnlineCourcesDB;Integrated Security=True");
 

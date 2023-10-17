@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProgrammingCourse
 {
-    class Calculator
+    public class Calculator
     {
         private int price;
         private int cash;

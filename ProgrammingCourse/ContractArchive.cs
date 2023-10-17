@@ -7,7 +7,7 @@ using System.Xml.Linq;
 
 namespace ProgrammingCourse
 {
-    class ContractArchive
+    public class ContractArchive
     {
         private List<Contract> contracts = new List<Contract>();
         private Contract contract;

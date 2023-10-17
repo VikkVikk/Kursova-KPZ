@@ -9,7 +9,7 @@ using System.Windows.Forms;
 
 namespace ProgrammingCourse
 {
-    class DatabaseExecuter
+    public class DatabaseExecuter
     {
         private Database database = new Database();
         private SubjectList subjectList = Register.GetSubjectList();

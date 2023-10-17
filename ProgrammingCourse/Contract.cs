@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProgrammingCourse
 {
-    class Contract
+    public class Contract
     {
         private string studentInfo;
         private int number;

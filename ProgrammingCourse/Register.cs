@@ -10,7 +10,7 @@ using System.Diagnostics;
 
 namespace ProgrammingCourse
 {
-    static class Register
+    public static class Register
     {
         private static SubjectList subjectList = new SubjectList();
         private static ContractArchive archive = new ContractArchive();
