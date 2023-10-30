@@ -32,19 +32,11 @@ namespace ProgrammingCourse
 
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
-            if(int.TryParse(txtCash.Text, out int cash))
+            if(Register.IsValidCash(txtCash.Text, out int cash))
             {
                 calculator.setCash(cash);
                 rest = calculator.getRest();
-
-                if (rest >= 0)
-                {
-                    txtRest.Text = Convert.ToString(rest);
-                }
-                else
-                {
-                    txtRest.Text = $"Не вистачає: {-rest}";
-                }
+                txtRest.Text = Register.getRestMessage(rest);
             }
             else
             {

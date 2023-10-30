@@ -36,5 +36,29 @@ namespace ProgrammingCourse
         {
             return executer;
         }
+
+        public static bool IsValidCash(string input, out int cash)
+        {
+            bool result = int.TryParse(input, out cash);
+
+            if(cash < 0)
+            {
+                return false;
+            }
+
+            return result;
+        }
+
+        public static string getRestMessage(int rest)
+        {
+            if (rest >= 0)
+            {
+                return Convert.ToString(rest);
+            }
+            else
+            {
+                return $"Не вистачає: {-rest}";
+            }
+        }
     }
 }
