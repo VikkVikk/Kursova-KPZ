@@ -71,7 +71,7 @@ namespace ProgrammingCourse
             return null;
         }
 
-        public byte getContractStudyDuration()
+        public sbyte getContractStudyDuration()
         {
             if (contract != null)
             {

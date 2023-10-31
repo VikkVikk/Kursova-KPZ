@@ -12,11 +12,11 @@ namespace ProgrammingCourse
         private int number;
         private DateTime date;
         private string subjectName;
-        private byte studyDuration;
+        private sbyte studyDuration;
         private int price;
         private bool isPayed = false;
 
-        public Contract(string studentInfo, int number, DateTime date, string subjectName, byte studyDuration, int price, bool isPayed)
+        public Contract(string studentInfo, int number, DateTime date, string subjectName, sbyte studyDuration, int price, bool isPayed)
         {
             this.studentInfo = studentInfo;
             this.number = number;
@@ -47,7 +47,7 @@ namespace ProgrammingCourse
             return subjectName;
         }
 
-        public byte getContractStudyDuration()
+        public sbyte getContractStudyDuration()
         {
             return studyDuration;
         }

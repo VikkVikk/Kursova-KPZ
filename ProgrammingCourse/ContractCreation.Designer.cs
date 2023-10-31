@@ -46,6 +46,8 @@
             this.label5 = new System.Windows.Forms.Label();
             this.printDocument1 = new System.Drawing.Printing.PrintDocument();
             this.printPreviewDialog1 = new System.Windows.Forms.PrintPreviewDialog();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtStudyType = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // txtSearchSubName
@@ -70,7 +72,7 @@
             // txtSubjectName
             // 
             this.txtSubjectName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtSubjectName.Location = new System.Drawing.Point(203, 201);
+            this.txtSubjectName.Location = new System.Drawing.Point(203, 178);
             this.txtSubjectName.Name = "txtSubjectName";
             this.txtSubjectName.Size = new System.Drawing.Size(212, 24);
             this.txtSubjectName.TabIndex = 2;
@@ -78,7 +80,7 @@
             // txtStudyDuration
             // 
             this.txtStudyDuration.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtStudyDuration.Location = new System.Drawing.Point(203, 252);
+            this.txtStudyDuration.Location = new System.Drawing.Point(203, 225);
             this.txtStudyDuration.Name = "txtStudyDuration";
             this.txtStudyDuration.Size = new System.Drawing.Size(212, 24);
             this.txtStudyDuration.TabIndex = 3;
@@ -86,7 +88,7 @@
             // txtStudyPrice
             // 
             this.txtStudyPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtStudyPrice.Location = new System.Drawing.Point(203, 302);
+            this.txtStudyPrice.Location = new System.Drawing.Point(203, 275);
             this.txtStudyPrice.Name = "txtStudyPrice";
             this.txtStudyPrice.Size = new System.Drawing.Size(212, 24);
             this.txtStudyPrice.TabIndex = 4;
@@ -139,7 +141,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label1.Location = new System.Drawing.Point(32, 201);
+            this.label1.Location = new System.Drawing.Point(32, 178);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(101, 18);
             this.label1.TabIndex = 9;
@@ -149,7 +151,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label2.Location = new System.Drawing.Point(32, 253);
+            this.label2.Location = new System.Drawing.Point(32, 226);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(156, 18);
             this.label2.TabIndex = 10;
@@ -159,7 +161,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(32, 305);
+            this.label3.Location = new System.Drawing.Point(32, 278);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(139, 18);
             this.label3.TabIndex = 11;
@@ -208,11 +210,31 @@
             this.printPreviewDialog1.Name = "printPreviewDialog1";
             this.printPreviewDialog1.Visible = false;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label6.Location = new System.Drawing.Point(32, 327);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(79, 18);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "Тип курсу:";
+            // 
+            // txtStudyType
+            // 
+            this.txtStudyType.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtStudyType.Location = new System.Drawing.Point(203, 324);
+            this.txtStudyType.Name = "txtStudyType";
+            this.txtStudyType.Size = new System.Drawing.Size(212, 24);
+            this.txtStudyType.TabIndex = 15;
+            // 
             // ContractCreation
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(878, 567);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.txtStudyType);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.txtClientPIB);
             this.Controls.Add(this.label4);
@@ -258,5 +280,7 @@
         private System.Windows.Forms.Label label5;
         private System.Drawing.Printing.PrintDocument printDocument1;
         private System.Windows.Forms.PrintPreviewDialog printPreviewDialog1;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtStudyType;
     }
 }

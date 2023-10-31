@@ -27,6 +27,7 @@ namespace ProgrammingCourse
             txtStudyPrice.ReadOnly = true;
             txtClientPIB.ReadOnly = true;
             txtContract.ReadOnly = true;
+            txtStudyType.ReadOnly = true;
 
             btnClear.Enabled = false;
             btnDrawUpContract.Enabled = false;
@@ -40,6 +41,7 @@ namespace ProgrammingCourse
             txtStudyPrice.Clear();
             txtClientPIB.Clear();
             txtContract.Clear();
+            txtStudyType.Clear();
 
             txtClientPIB.ReadOnly = true;
         }
@@ -51,6 +53,7 @@ namespace ProgrammingCourse
                 txtSubjectName.Text = subjectList.getSubjectName();
                 txtStudyDuration.Text = Convert.ToString(subjectList.getStudyDuration()) + " місяці(в)";
                 txtStudyPrice.Text = Convert.ToString(subjectList.getPrice()) + " гривень";
+                txtStudyType.Text = subjectList.getStudyType();
 
                 txtClientPIB.ReadOnly = false;
                 btnClear.Enabled = true;

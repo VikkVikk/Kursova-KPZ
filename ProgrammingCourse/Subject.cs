@@ -8,10 +8,10 @@ namespace ProgrammingCourse
     public class Subject
     {
         private string subjectName;
-        private byte studyDuration;
+        private sbyte studyDuration;
         private int price;
 
-        public Subject (string subjectName, byte studyDuration, int price)
+        public Subject (string subjectName, sbyte studyDuration, int price)
         {
             this.subjectName = subjectName;
             this.studyDuration = studyDuration;
@@ -23,7 +23,7 @@ namespace ProgrammingCourse
             return subjectName;
         }
 
-        public byte getStudyDuration()
+        public sbyte getStudyDuration()
         {
             return studyDuration;
         }
@@ -31,6 +31,26 @@ namespace ProgrammingCourse
         public int getPrice()
         {
             return price;
+        }
+
+        public string getStudyType()
+        {
+            if(studyDuration > 0 && studyDuration <= 6)
+            {
+                return "Експрес-курс";
+            }
+
+            if(studyDuration > 6 && studyDuration <= 12)
+            {
+                return "Загальний курс";
+            }
+
+            if(studyDuration > 12)
+            {
+                return "Поглиблений курс";
+            }
+
+            return "Неможливо визначити...";
         }
     }
 }

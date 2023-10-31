@@ -41,7 +41,7 @@ namespace ProgrammingCourse
             return null;
         }
 
-        public byte getStudyDuration()
+        public sbyte getStudyDuration()
         {
             if (subject != null)
             {
@@ -59,6 +59,16 @@ namespace ProgrammingCourse
             }
 
             return 0;
+        }
+
+        public string getStudyType()
+        {
+            if (subject != null)
+            {
+                return subject.getStudyType();
+            }
+
+            return null;
         }
     }
 }

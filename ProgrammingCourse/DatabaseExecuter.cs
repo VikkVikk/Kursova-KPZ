@@ -18,7 +18,7 @@ namespace ProgrammingCourse
         public void FeelSubjects()
         {
             string subjectName;
-            byte studyDuration;
+            sbyte studyDuration;
             int price;
 
             using (SqlCommand sqlCommand = new SqlCommand("MakeSubjects", database.getConnection()))
@@ -37,7 +37,7 @@ namespace ProgrammingCourse
                         foreach (DataRow row in dataTable.Rows)
                         {
                             subjectName = row["subjectName"].ToString();
-                            studyDuration = Convert.ToByte(row["studyDuration"]);
+                            studyDuration = Convert.ToSByte(row["studyDuration"]);
                             price = Convert.ToInt32(row["price"]);
 
                             Subject subject = new Subject(subjectName, studyDuration, price);
@@ -62,7 +62,7 @@ namespace ProgrammingCourse
             int number;
             DateTime date;
             string subjectName;
-            byte studyDuration;
+            sbyte studyDuration;
             int price;
             bool isPayed;
 
@@ -85,7 +85,7 @@ namespace ProgrammingCourse
                             number = Convert.ToInt32(row["number"]);
                             date = Convert.ToDateTime(row["date"]);
                             subjectName = row["subjectName"].ToString();
-                            studyDuration = Convert.ToByte(row["studyDuration"]);
+                            studyDuration = Convert.ToSByte(row["studyDuration"]);
                             price = Convert.ToInt32(row["price"]);
                             isPayed = Convert.ToBoolean(row["isPayed"]);
 
@@ -132,7 +132,7 @@ namespace ProgrammingCourse
             return number;
         }
 
-        public void CreateContract(string studentInfo, int number, DateTime date, string subjectName, byte studyDuration, int price)
+        public void CreateContract(string studentInfo, int number, DateTime date, string subjectName, sbyte studyDuration, int price)
         {
             bool isPayed = false;
 
